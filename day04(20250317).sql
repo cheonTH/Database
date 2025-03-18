@@ -269,6 +269,10 @@ AND L.CITY = 'Seattle';
 -- FROM 테이블A A JOIN 테이블A B
 -- ON A.열 = B.열;
 
+-- ON과 WHERE의 차이
+-- ON: 조인시 두 테이블의 행의 결합 조건을 지정 특히 외부 조인에서는 어떤 행을 결합할지 결정하는 중요한 역할을 함
+-- WHERE 결합된 결과 집합에 대해 추가적인 필터링을 적용
+
 SELECT E2.FIRST_NAME, E2.EMPLOYEE_ID
 FROM EMPLOYEES E1 JOIN EMPLOYEES E2
 ON E1.EMPLOYEE_ID = E2.MANAGER_ID;
